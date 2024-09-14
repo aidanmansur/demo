@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section.bg-light {
+    background-color: #f8f9fa;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .navbar-expand-lg .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item {
+        float: none;
+        display: block;
+    }
+}

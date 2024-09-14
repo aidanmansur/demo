@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Galerisi</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="art.css">
+    <script src="./art.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sanat Galerisi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artist">Sanatçı</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exhibitions">Sergiler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Etkinlikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="py-5 text-center">
+            <div class="container">
+                <h1 class="display-4">Hoşgeldiniz</h1>
+                <p class="lead">Sanat Galerimizin en son sergilerini keşfedin.</p>
+                <img src="https://via.placeholder.com/1200x600" alt="Ana Sayfa Görseli" class="img-fluid">
+            </div>
+        </section>
+
+        <!-- Artist Section -->
+        <section id="artist" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-4">Sanatçı</h2>
+                <p>Sanatçının biyografisi ve çalışmaları hakkında bilgi.</p>
+                <img src="https://via.placeholder.com/1200x600" alt="Sanatçı" class="img-fluid">
+            </div>
+        </section>
+
+        <!-- Exhibitions Section -->
+        <section id="exhibitions" class="py-5">
+            <div class="container">
+                <h2 class="display-4">Sergiler</h2>
+                <p>Güncel ve geçmiş sergiler hakkında bilgiler.</p>
+                <div id="exhibitionCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Sergi 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sergi Başlığı 1</h5>
+                                <p>Sergi açıklaması burada yer alacak.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Sergi 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sergi Başlığı 2</h5>
+                                <p>Sergi açıklaması burada yer alacak.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Sergi 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sergi Başlığı 3</h5>
+                                <p>Sergi açıklaması burada yer alacak.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#exhibitionCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Önceki</span>
+                    </a>
+                    <a class="carousel-control-next" href="#exhibitionCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Sonraki</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Events Section -->
+        <section id="events" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-4">Etkinlikler</h2>
+                <p>Gelecek etkinlikler hakkında bilgiler.</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Etkinlik 1</h4>
+                        <p>Etkinlik açıklaması burada yer alacak.</p>
+                    </li>
+                    <li>
+                        <h4>Etkinlik 2</h4>
+                        <p>Etkinlik açıklaması burada yer alacak.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="display-4">İletişim</h2>
+                <p>İletişim bilgileri ve form.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Adınız</label>
+                        <input type="text" class="form-control" id="name" placeholder="Adınız">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-posta">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Mesajınızı buraya yazın"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Sanat Galerisi</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
